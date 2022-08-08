@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/">
+        <center>
+    <table border="1" bgcolor="white">
+        <tr bgcolor="skyblue">
+            
+           
+            <td>
+                Image
+            </td>
+            <td>order id</td>
+            
+            <td>
+                Product_category
+            </td>
+      
+                <td>
+                    Cost
+                </td>
+     
+                    <td>
+                        Quantity
+                    </td>
+                   
+               
+                        <td>
+                            Order_date
+                        </td>
+            
+                            <td>
+                                Order_status
+                            </td>
+                            
+                    </tr>
+                    {%for  i in rows %}
+                    <tr>
+                            <td><input type="image" src="{{i[1]}}" alt="" height="350" width="300"></td>
+                            <td>{{i[0]}}</td>
+                            <td>{{i[2]}}</td>
+                             <td>{{i[3]}}</td>
+                            <td>{{i[4]}}</td>
+                            <td>{{i[5]}}</td>
+                            <td>{{i[6]}}</td>
+                     
+                       </tr>
+              {%endfor%}
+                    
+    </table>
+</form>
+</body>
+</html>

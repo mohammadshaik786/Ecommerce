@@ -1,0 +1,126 @@
+<html>
+<style>
+    table{
+        background-color: whitesmoke;
+        width:max-content;
+    }
+</style>
+<body>
+    <center>
+        <form action="/addtocart" method="POST">
+            <h1>Cart Details</h1>
+            <table>
+                    <tr>
+                        
+                            <td rowspan="7">
+                                    <input type="image" name="p3" src="{{rows[3]}}" width="350" height="350" readonly>    
+                                </td>
+                                            </tr>
+                    <tr>
+                        <td>Product ID</td>
+                        <td>
+                                <input type="text" name="p1" value="{{rows[0]}}" readonly>    
+                            </td>
+                    </tr>
+                    <tr>
+                            <td>Product_Name</td>
+                            <td>
+                                    <input type="text" name="cat" value="{{rows[1]}}" readonly>    
+                                </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Product_Category
+                        </td>
+                        <td>
+                            <input type="text" name="p2" value="{{rows[2]}}" readonly>    
+                         </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>
+                            Product_Description
+                        </td>
+                        <td>
+                                <input type="text" name="p4" value="{{rows[4]}}" readonly>    
+                       
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Product_Quantity_Required
+                        </td>
+                        <td>
+                                <input type="text" name="q">    
+                       
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                Product_Cost
+                            </td>
+                            <td>
+                                    <input type="text" name="p5" value="{{rows[5]}}" readonly>    
+                           
+                            </td>
+                        </tr>
+                </table>
+                <input type="submit" value="ADD" style="color: blue">
+            </form>
+    </center>
+</body>
+</html>
+<!--<html>
+<style>
+    table{
+        background-color: cornflowerblue;
+    }
+</style>
+<body>
+    <center>
+        <form action="/addtocart" method="POST">
+            <h1>Cart Details</h1>
+            <table>
+               
+                
+                            <tr aria-rowspan="6">
+                                <td>
+                                    <input type="image" name="p3" src="{{rows[3]}}" width="350" height="350" readonly>
+                                </td>  
+                                <td>
+                                    <tr>
+                                    <td>Product ID</td>
+                                
+                                    <td><input type="text" name="p1" value="{{rows[0]}}" readonly> </td>
+                                    </tr>
+                                    Product_Name
+                                    
+                                            <input type="text" name="cat" value="{{rows[1]}}" readonly> <br>   
+                                        
+                                                Product_Category
+                                            
+                                                <input type="text" name="p2" value="{{rows[2]}}" readonly><br>    
+                                             
+                                                    Product_Description
+                                                
+                                                        <input type="text" name="p4" value="{{rows[4]}}" readonly> <br>   
+                                               
+                                                        Product_Quantity_Required
+                                                    
+                                                             <input type="text" name="q"><br>    
+                                                    
+                                                    
+                                    Product_Cost
+                                                       
+                                    <input type="text" name="p5" value="{{rows[5]}}" readonly>    
+                                                       
+                                </td>
+                            </tr>
+                            
+                    
+                </table>
+                <input type="submit" value="ADD" style="color: blue">
+            </form>
+    </center>
+</body>
+</html>-->

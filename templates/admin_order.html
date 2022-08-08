@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+      table{
+          background-color: aliceblue;
+      }
+  </style>  
+</head>
+
+<body>
+    <form action="/">
+        <center>
+    <table border="1">
+        <tr bgcolor="skyblue">
+                <td>
+                        Product Image
+                    </td>
+            <td>order id</td>
+           
+            
+            
+            <td>
+                Product_category
+            </td>
+      
+                <td>
+                    Cost
+                </td>
+     
+                    <td>
+                        Quantity
+                    </td>
+                   
+               
+                        <td>
+                            Order_date
+                        </td>
+            
+                            <td>
+                                Order_status
+                            </td>
+                            <td>CANCEL</td>
+                            <td>
+                                FINISH
+                            </td>
+                            <td>
+                                Door Delivery Details
+                            </td>
+                            
+                    </tr>
+                    {%for  i in rows %}
+                    <tr>
+                            <td><input type="image" src="{{i[1]}}" alt="" width="300" height="350"></td>
+                            <td>{{i[0]}}</td>
+                            <td>{{i[2]}}</td>
+                            <td>{{i[3]}}</td>
+                            <td>{{i[4]}}</td>
+                            <td>{{i[5]}}</td>
+                            <td>{{i[6]}}</td>
+                     <td><a href="/cancelorder/{{i[0]}}">CANCEL</a></td>
+                     <td><a href="/finishorder/{{i[0]}}">FINISH</a></td>
+                     <td><a href="/getdetails/{{i[0]}}">DELIVERY DETAILS</a></td>
+                       </tr>
+              {%endfor%}
+                    
+    </table>
+</form>
+</body>
+</html>

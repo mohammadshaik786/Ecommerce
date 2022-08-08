@@ -1,0 +1,38 @@
+<html>
+<body>
+    <center>
+      <form action="/viewcart">
+      <input type="submit" value="VIEWCART">
+      <table border=1 bgcolor="white">
+     
+      <tr bgcolor="aqua">
+            <th> Product_Image</th>  
+            <!--<th> Product ID </th>-->
+            <th>Product_Name</th>
+            <th> Product_Category</th>
+	        
+            <th> product_Description</th>
+            <th> Product_Cost</th>
+            <th>Product_Size</th>
+            <th>Add</th>
+	
+     </tr>
+     {%for  i in x %}
+     <tr>
+             <td><input type="image" src="{{i[3]}}" alt="" width="300" height="350"></td>
+             <!--<td>{{i[0]}}</td>-->
+             <td>{{i[1]}}</td>
+             <td>{{i[2]}}</td>
+             <td>{{i[4]}}</td> 
+             <td>{{i[5]}}</td>
+             <td>{{i[6]}}</td>
+             <td><a href="/productquantityform/{{i[0]}}">ADD</a></td>
+        </tr>
+      {%endfor%}  
+          
+</table>
+
+</form></center>
+
+</body>
+</html>

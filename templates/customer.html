@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.Sarees {
+  float: left;
+  overflow: hidden;
+}
+
+.Sarees .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .Sarees:hover .dropbtn {
+  background-color: red;
+}
+
+.Sarees-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Sarees-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.Sarees-content a:hover {
+  background-color: #ddd;
+}
+
+.Sarees:hover .Sarees-content {
+  display: block;
+}
+
+
+.topnav-right {
+  float: right;
+}
+
+.main{
+  background-image: url('/static/image/home.jpg');
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<center>
+<h1 >ONLINE MENS-HUT</h1>
+</center>
+<form action="/">
+<div class="navbar">
+  <div class="Sarees">
+      <button class="dropbtn">Mens 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="Sarees-content">
+        <a href="/product/SHIRTS" target="tt1">Shirts</a>
+        <a href="/product/SHOES" target="tt1">Shoes</a>
+        <a href="/product/WALLETS" target="tt1">Wallets</a>
+        <a href="/product/BELTS" target="tt1">Belts</a>
+      </div>
+  </div> 
+  <div class="Sarees">
+    <button class="dropbtn">Orders
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="Sarees-content">
+      <a href="/placedorders" target="tt1">Placed Orders</a>
+      <a href="/ucancelorders" target="tt1">Cancelled Orders</a>
+    </div>
+  </div>
+  <a href="/viewcart" target="tt1">Cart</a>
+  <div class="topnav-right">
+    <a href="/fetchuserdetails" target="tt1">{{name}}</a>
+  
+    <a href="/home">Logout</a>
+  </div>
+</div>
+<div class="main">
+  <div> 
+    <iframe src="" name="tt1" width="100%" height="500"></iframe>
+  </div>
+</div>
+</form>
+</body>
+</html>

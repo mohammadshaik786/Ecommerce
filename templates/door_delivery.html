@@ -1,0 +1,50 @@
+
+<html>
+    <body>
+    
+        <form action="/finish" method="POST">
+            <center>
+                <h1>Door Delivery Details</h1>
+                <table bgcolor="skyblue">
+                        <tr>
+                            <td> Order Id</td>
+                            <td>
+                                    <input type="text" name="o" value="{{orderid}}" readonly>    
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                <input type="text" name="n">    
+                             </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    Mobile no
+                                </td>
+                                <td>
+                                        <input type="text" name="m">    
+                                    </td>
+                            </tr>
+                        <tr>
+                            <td>
+                               Address
+                            </td>
+                            <td>
+                                    <textarea name="a" id="" cols="22" rows="10"></textarea>    
+                           
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="PLACE ORDER">
+                
+                </center>
+                
+          
+        </form>
+        
+        </body>
+        </html>
+        

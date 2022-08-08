@@ -1,0 +1,168 @@
+<!--<html>
+   <body>
+     <form action="/delete_item_rec" method="post">
+        <center>
+        <table>
+    
+        <tr>
+            
+            <td>
+                    <input type="image" name="p3" width="500" height="300" src="{{rows[3]}}">    
+                </td>
+        </tr>
+        <tr>
+                <td>Product ID</td>
+                <td>
+                        <input type="text" name="i" value="{{rows[0]}}" readonly>    
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        Product_Name
+                    </td>
+                    <td>
+                        <select name="pn" value="{{rows[1]}}">
+                            <option >SHIRTS</option>
+                            <option >SHOES</option>
+                        </select>    
+                   
+                    </td>
+                </tr>
+            <tr>
+                <td>
+                    Product_Category
+                </td>
+                <td>
+                        <select name="cp" value="{{rows[2]}}">
+                            <option >Party Wear</option>
+                            <option >Traditional</option>
+                        </select>   
+                 </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Product_Description
+                </td>
+                <td>
+                        <input type="text" name="p4" value="{{rows[4]}}">    
+               
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                        Product_Cost
+                    </td>
+                    <td>
+                            <input type="text" name="p5" value="{{rows[5]}}">    
+                   
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            Product_Quantity_Available
+                        </td>
+                        <td>
+                                <input type="text" name="p6" value="{{rows[6]}}">    
+                       
+                        </td>
+                    </tr>
+
+     </table>
+                        <input type="submit" value="delete" style="color: blue">
+                        </center>
+      </form>
+      </body>
+</html>-->
+<html>
+   <body>
+       <h2 align="center">Delete Products</h2>
+     <form action="/delete_item_rec" method="post">
+        <center>
+        <table>
+                <tr>
+                       
+                        <td rowspan="8">
+                                <input type="image" src="{{rows[3]}}" width="350" heigth="350">    
+                            </td>
+                    </tr>
+        <tr>
+            <td>Product ID</td>
+            <td>
+                    <input type="text" value="{{rows[0]}}" name="i">    
+                </td>
+        </tr>
+        <tr>
+            <td>
+                Product_Name
+            </td>
+            <td>
+                <select name="pn" value="{{rows[1]}}">
+                    <option >SHIRTS</option>
+                    <option >SHOES</option>
+                    <option>WALLETS</option>
+                     <option>BELTS</option>
+                </select>    
+           
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Product Image
+            </td>
+        <td>
+            <input type="text" value="{{rows[3]}}" name="p3">    
+        </td>
+        </tr>
+        <tr>
+            <td>
+                Product_Category
+            </td>
+            <td>
+                    <select name="cp" value="{{rows[2]}}">
+                        <option >Party wear</option>
+                                    <option>Casual Wear</option>
+                                    <option>Sports Shoes</option>
+                                    <option>Loafer Shoes</option>
+                                    <option>Formal</option>
+                                    <option>Casual Leather</option>
+                                    <option>Canvax Leather</option>
+                    </select>   
+             </td>
+        </tr>
+       
+        <tr>
+            <td>
+                Product_Description
+            </td>
+            <td>
+                <textarea name="p4"  value="{{rows[4]}}" cols="22" rows="5">{{rows[4]}} </textarea>    
+           
+            </td>
+        </tr>
+        <tr>
+                <td>
+                    Product_cost
+                </td>
+                <td>
+                        <input type="text" value="{{rows[5]}}" name="p5">    
+               
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Product_Size
+                </td>
+                <td>
+                        <input type="text" name="p6" value="{{rows[6]}}">    
+               
+                </td>
+            </tr>
+            
+     </table>
+                        <input type="submit" value="delete" style="color: blue">
+                        </center>
+      </form>
+      </body>
+</html>
+

@@ -1,0 +1,52 @@
+<html>
+
+<body>
+    <center>
+        <form action="/doordelivery">
+            <h1>View Cart</h1>
+            <table border="1" bgcolor="white">
+                    <tr>
+                            <td>
+                                    Product_Image
+                                </td>
+                        <td>Product ID</td>
+                        <td>
+                            Product Name
+                        </td>
+                        <td>
+                                Product_Category
+                            </td>
+                           
+                                <td>
+                                        Product_Cost
+                                    </td>
+                                    <td>
+                                        Product_Quantity
+                                    </td>
+                                    <td>
+                                      Sub  Total
+                                    </td>
+                     
+                    </tr>
+                    {%for  i in rows %}
+                    <tr>
+                            <td><input type="image" src="{{i[3]}}" alt="" height="350" width="300"></td>
+                            <td>{{i[0]}}</td>
+                            <td>{{i[1]}}</td>
+                            <td>{{i[2]}}</td>
+                             <td>{{i[4]}}</td>
+                            <td>{{i[5]}}</td>
+                            <td>{{i[6]}}</td>
+                      </tr>
+              {%endfor%}
+                    
+                    
+                        
+                </table>
+Total Amount:{{total}}
+<br>
+                <input type="submit" value="PROCEED">
+         </form>
+    </center>
+</body>
+</html>

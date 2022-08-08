@@ -1,0 +1,40 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <center>
+                <form action="/adminupdate" method="post">
+                Product Id<input type="text" name="p1"><br>
+                <input type="submit" value="Get Details">
+                </form>
+                </center>
+    
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <center>
+                <form action="/adminupdate" method="post">
+                Product Id<select name="p1">
+                   {% for i in row %}
+                    <option value="{{i[0]}}">{{i[0]}}</option>
+                    {%endfor%}
+                </select>
+                <input type="submit" value="Get Details">
+                </form>
+                </center>
+    
+</body>
+</html>

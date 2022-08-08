@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('/static/image/bodyspray.jpg');
+            background-size: cover;
+        }
+        table{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form action="/savedetails" method="post">
+        <center>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>
+                    <input type="text" value="{{rows[0]}}" name="n1">    
+                </td>
+        </tr>
+        <tr>
+            <td>
+                Email
+            </td>
+            <td>
+                    <input type="text" value="{{rows[1]}}" name="n2">    
+                </td>
+        </tr>
+        <tr>
+            <td>
+                Password
+            </td>
+            <td>
+                    <input type="text" value="{{rows[2]}}" name="n3">    
+           
+            </td>
+        </tr>
+        <tr>
+                <td>
+                    Address
+                </td>
+                <td>
+                        <input type="text" value="{{rows[3]}}" name="n4">    
+               
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                        Street
+                    </td>
+                    <td>
+                            <input type="text" value="{{rows[4]}}" name="n5">    
+                   
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            City
+                        </td>
+                        <td>
+                                <input type="text" value="{{rows[5]}}" name="n6">    
+                       
+                        </td>
+                    </tr>
+                        <tr>
+                                <td>
+                                    State
+                                </td>
+                                <td>
+                                        <input type="text" value="{{rows[6]}}" name="n7">    
+                               
+                                </td>
+                        </tr>
+                        <tr>
+                                    <td>
+                                        Pincode
+                                    </td>
+                                    <td>
+                                            <input type="text" value="{{rows[7]}}" name="n8">    
+                                   
+                                    </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phone Number
+                            </td>
+                            <td>
+                                    <input type="text" value="{{rows[8]}}" name="n9">    
+                           
+                            </td>
+                </tr>
+    </table>
+    <input type="submit" value="update"></center>
+</form>
+</body>
+</html>

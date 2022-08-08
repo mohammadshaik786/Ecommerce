@@ -1,0 +1,51 @@
+
+<html>
+    <body>
+    
+        <form action="/adminorder">
+            <center>
+                <table bgcolor="white">
+                        <tr>
+                            <td> Order Id</td>
+                            <td>
+                                    <input type="text" name="o" value="{{rows[0]}}" readonly>    
+                                </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                <input type="text" name="n" value="{{rows[1]}}" readonly>    
+                             </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    Mobile no
+                                </td>
+                                <td>
+                                        <input type="text" name="m" value="{{rows[2]}}" readonly>    
+                                    </td>
+                            </tr>
+                        <tr>
+                            <td>
+                               Address
+                            </td>
+                            <td>
+                                    <textarea name="a" id="" cols="22" rows="10" value="{{rows[3]}}" readonly>{{rows[3]}}</textarea>    
+                           
+                           
+                            </td>
+                        </tr>
+                    </table>
+                   
+                
+                
+                
+          
+        </form>
+        <input type="submit" value="BACK">
+    </center>
+        </body>
+        </html>
+        

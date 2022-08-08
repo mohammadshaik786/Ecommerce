@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>DELETE SAREES</title>
+</head>
+<body>
+<center>
+<form action="/delete_item" method="post">
+    Product Id<select name="i">
+            {% for j in row %}
+             <option value="{{j[0]}}">{{j[0]}}</option>
+             {%endfor%}
+         </select>
+<input type="submit" value="Get Details">
+</form>
+</center>
+</body>
+</html>
